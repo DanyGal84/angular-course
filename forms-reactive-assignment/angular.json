@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "forms-reactive-start": {
+    "forms-reactive-assignment": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/forms-reactive-start",
+            "outputPath": "dist/forms-reactive-assignment",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -66,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "forms-reactive-start:build"
+            "browserTarget": "forms-reactive-assignment:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "forms-reactive-start:build:production"
+              "browserTarget": "forms-reactive-assignment:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "forms-reactive-start:build"
+            "browserTarget": "forms-reactive-assignment:build"
           }
         },
         "test": {
@@ -92,7 +88,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -114,18 +110,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "forms-reactive-start:serve"
+            "devServerTarget": "forms-reactive-assignment:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "forms-reactive-start:serve:production"
+              "devServerTarget": "forms-reactive-assignment:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "forms-reactive-start",
+  "defaultProject": "forms-reactive-assignment",
   "cli": {
     "analytics": false
   }

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('forms-reactive-start app is running!');
+    expect(page.getTitleText()).toEqual('forms-reactive-assignment app is running!');
   });
 
   afterEach(async () => {
