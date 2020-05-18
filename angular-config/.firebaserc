@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "newagent-98f0d": {
+      "hosting": {
+        "angular-config": [
+          "newagent-98f0d"
+        ]
+      }
+    }
+  }
+}
